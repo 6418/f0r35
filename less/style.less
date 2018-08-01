@@ -110,7 +110,7 @@ website:    http://www.themepunch.com
     span {
         color: @skin-color;
     }
-    padding: 20px 15px;
+    padding: 15px;
     letter-spacing: 2.5px;
     z-index: 99999;
 }
@@ -124,7 +124,7 @@ website:    http://www.themepunch.com
         font-weight: 900;
         text-transform: uppercase;
         .transition;
-        padding: 48px 15px;
+        padding: 35px 15px;
     }
     > li > a:hover,
     > li > a.active {
@@ -289,6 +289,22 @@ p {
 .title-section.white {
     h1 {
         color: @white;
+    }
+}
+
+.myBtn{
+    background-color: @skin-color;
+    color: #FFF;
+    display: block;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-decoration: none !important;
+    transition: 1s background-color ease 0s;
+    &:hover{
+        color: #FFF;
+        background-color: @skin-color-brown1;
     }
 }
 
@@ -631,12 +647,14 @@ section.services-section {
 }
 
 .tabs-section {
-    padding: 60px 0 60px;
-    background: #222222;
+    padding: 120px 0 70px 0;
+    background: #42a73f; /* Old browsers */
+    background: linear-gradient(45deg,  #42a73f 0%,#8e4a29 100%);
+    ;
     position: relative;
     .about-us-box {
-        h1 {
-            font-size: 18px;
+        h2 {
+            font-size: 24px;
             font-weight: 700;
             text-transform: uppercase;
             color: @white;
@@ -644,17 +662,18 @@ section.services-section {
             padding-bottom: 20px;
             position: relative;
         }
-        h1:after {
+        h2:after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 0;
             width: 30px;
-            background: @skin-color;
+            background: #000;
             height: 1px;
         }
         p {
-            margin-bottom: 0px;
+            margin-bottom: 16px;
+            color: #FFF;
         }
         .about-us-post {
             overflow: hidden;
@@ -723,7 +742,7 @@ section.services-section {
 }
 
 .news-section {
-    padding: 60px 0 30px;
+    padding: 90px 30px;
     background: #fff;
     .news-box.owl-wrapper {
         margin-left: -15px;
@@ -732,13 +751,19 @@ section.services-section {
             padding: 0 15px;
         }
     }
-    h2{
-        text-transform: uppercase;
-        font-weight: 700;
-        font-family: inherit;
+    h1{
+        text-transform: capitalize;
+        font-weight: 300;
+        font-family: @font;
         font-size: 25px;
         text-align: center;
         margin-bottom: 40px;
+        color: @skin-color-brown3;
+        b{
+            text-transform: uppercase;
+            font-size: 30px;
+            color: @skin-color-brown4;
+        }
     }
     .news-post {
         .news-gallery {
@@ -774,27 +799,31 @@ section.services-section {
         .news-content {
             padding: 25px 0;
             background: #fff;
-            h2 {
-                .heading2;
+            h3 {
+                .heading3;
                 a {
                     .anchor;
-                    color: @color1;
+                    color: @skin-color;
                 }
                 a:hover {
-                    color: @skin-color;
+                    color: @skin-color-brown4;
                 }
             }
             > a {
-                .anchor;
-                .paragraph;
-                color: @color1;
+                padding: 8px;
+                background-color: @skin-color;
+                color: #FFF;
                 margin: 0;
+                border-radius: 4px;
+                text-decoration: none;
+                transition: 1s background-color ease 0s;
                 i {
-                    margin-left: 12px;
+                    margin-left: 10px;
                 }
             }
             > a:hover {
-                color: @skin-color;
+                background-color: @skin-color-brown1;
+                color: #FFF;
             }
         }
     }
@@ -973,9 +1002,15 @@ section.services-section {
 /* =  about page
 /*-------------------------------------------------*/
 
+.reforestacion{
+    background-image: url('../img/servicio-reforestacion-peru.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .page-banner-section {
-    padding: 50px 0;
-    background: #252525;
+    padding: 90px 0;
+    // background: #252525;
     overflow: hidden;
     h1 {
         .heading1;
@@ -1016,6 +1051,23 @@ section.services-section {
         }
     }
 }
+.about-post{
+    padding: 0 150px;
+    h1{
+        color: @skin-color;
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: @font;
+        font-weight: bold;
+    }
+    p{
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+}
 
 .about-section {
     padding: 80px 0;
@@ -1028,7 +1080,13 @@ section.services-section {
         height: 328px;
     }
     h2 {
-        .heading2;
+        color: @skin-color;
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: bold;
     }
 }
 
@@ -1453,6 +1511,19 @@ section.services-section {
         font-size: 16px;
         text-transform: uppercase;
         margin-bottom: 25px;
+        position: relative;
+        
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #000;
+        margin: 0 0 20px;
+        padding-bottom: 20px;
+        position: relative;
+        text-align: center;
+        font-family: @font;
     }
     p {
         margin-bottom: 30px;
@@ -1553,8 +1624,6 @@ section.services-section {
 /*-------------------------------------------------*/
 
 footer {
-    background: #252525;
-    padding-top: 80px;
     .footer-widgets {
         padding-bottom: 30px;
         .widgets {
@@ -1632,7 +1701,7 @@ footer {
         background: @skin-color;
     }
     .last-line {
-        background: #111111;
+        background: @skin-color-brown1;
         padding: 25px 0;
         p.copyright {
             font-size: 12px;

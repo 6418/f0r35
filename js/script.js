@@ -183,7 +183,7 @@ $(document).ready(function($) {
 	/* ---------------------------------------------------------------------- */
 	/*	Contact Map
 	/* ---------------------------------------------------------------------- */
-	var contact = {"lat":"27.9198643", "lon":"-82.4601977"}; //Change a map coordinate here!
+	var contact = {"lat":"-12.0665066", "lon":"-76.9433731"}; //Change a map coordinate here!
 
 	try {
 		var mapContainer = $('#map');
@@ -197,7 +197,7 @@ $(document).ready(function($) {
 			latLng: [contact.lat, contact.lon],
 			map:{
 				center: [contact.lat, contact.lon],
-				zoom: 12
+				zoom: 16
 				},
 			},
 			{action: 'setOptions', args:[{scrollwheel:false}]}
