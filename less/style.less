@@ -118,17 +118,18 @@ website:    http://www.themepunch.com
 .navbar-nav {
     .transition;
     > li > a {
-        color: @color2 !important;
+        color: @skin-color-brown1 !important;
         font-size: 13px;
         font-family: @font;
         font-weight: 900;
         text-transform: uppercase;
+        text-decoration: underline;
         .transition;
         padding: 35px 15px;
     }
     > li > a:hover,
     > li > a.active {
-        color: @color1 !important;
+        color: @skin-color !important;
     }
     li.drop {
         position: relative;
@@ -146,7 +147,7 @@ website:    http://www.themepunch.com
 
 .top-line {
     padding: 15px 0 10px 0;
-    background: @skin-color-brown1;
+    background: @skin-color;
     border-bottom: 1px solid #f3f3f3;
     .transition;
     overflow: hidden;
@@ -159,7 +160,7 @@ website:    http://www.themepunch.com
             font-size: 13px;
             font-family: @font;
             i {
-                color: @skin-color;
+                color: @skin-color-brown1;
                 font-size: 18px;
                 font-weight: bold;
                 margin-right: 10px;
@@ -175,7 +176,7 @@ website:    http://www.themepunch.com
             a {
                 .anchor;
                 font-size: 20px;
-                color: @white;
+                color: @skin-color-brown1;
             }
             a:hover {
                 color: @skin-color;
